@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Shopping App</string>
+
+    <string name="welcome">Welcome!!!</string>
+    <string name="welcome_sub">Hey! good to see you again.</string>
+    <string name="login">Login</string>
+    <string name="email_address_">Email Address</string>
+    <string name="email_address">Email Address *</string>
+    <string name="email_address_star">Email Address <font color='#EE0000'>*</font>"</string>
+    <string name="password_star">Password <font color='#EE0000'>*</font>"</string>
+    <string name="passwod">Password *</string>
+    <string name="rememberme">Remember me</string>
+    <string name="forgotpassword">Forgot password?</string>
+    <string name="account_text">Don\'t have an account ?  <u><b><font color='#ffffff' />Sign up</b></u></string>
+    <string name="signup">Signup</string>
+    <string name="continue_txt">Continue as</string>
+    <string name="password">Password</string>
+    <string name="products">Products</string>
+    <string name="profile">Profile</string>
+    <string name="item_name">Item Name</string>
+    <string name="price">Price :</string>
+    <string name="join_rewards">Click here to join us to get more rewards</string>
+
+</resources>

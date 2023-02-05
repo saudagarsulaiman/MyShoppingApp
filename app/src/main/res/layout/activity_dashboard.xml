@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/lnr_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txt_products"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rec_pink_c25"
+                android:fontFamily="@font/din_pro_bold"
+                android:gravity="center"
+                android:text="@string/products"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/txt_profile"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/din_pro_bold"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_120sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_oops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/oops" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rview_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp" />
+
+    <include
+        android:id="@+id/include_profile"
+        layout="@layout/lyt_profile" />
+
+</LinearLayout>
